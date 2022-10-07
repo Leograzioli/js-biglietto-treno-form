@@ -13,7 +13,6 @@ const rndNumber = Math.floor(Math.random() * (10000 - 99999) ) + 99999;
 submitBtn.addEventListener("click",  function () {
     //input value
     const userName = userNameInput.value;
-    console.log(userName)
     const userKm =  parseInt(userKmInput.value); 
     const userAge = userAgeInput.value;
 
@@ -24,11 +23,9 @@ submitBtn.addEventListener("click",  function () {
     if (userAge === "under-age"){
         const discount20 = ticketPrice * 0.2;
         ticketPrice -= discount20;
-        console.log (ticketPrice);
     } else if (userAge === "over-age"){
         const discount40 = ticketPrice * 0.4;
         ticketPrice -= discount40;
-        console.log(ticketPrice);
     };
 
     //final price
