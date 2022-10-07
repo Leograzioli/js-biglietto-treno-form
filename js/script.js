@@ -21,14 +21,12 @@ submitBtn.addEventListener("click",  function () {
     let ticketPrice = kmPrice * userKm;
     console.log(ticketPrice);
 
-    //discounts
-    const discount20 = ticketPrice * 0.2;
-    const discount40 = ticketPrice * 0.4;
-    
     if (userAge === "under-age"){
+        const discount20 = ticketPrice * 0.2;
         ticketPrice -= discount20;
         console.log (ticketPrice);
     } else if (userAge === "over-age"){
+        const discount40 = ticketPrice * 0.4;
         ticketPrice -= discount40;
         console.log(ticketPrice);
     };
