@@ -10,30 +10,64 @@
 </head>
 <body>
 
-    <div>
-        <div>
-            <label for="user-name">Insert your full name</label>
-            <input type="text" id="user-name">
-        </div>
-        
-        <div>
-            <label for="distance-km">What distance do you wanna travel in km?</label>
-            <input type="text" id="distance-km">
-        </div>
+    <main>
+        <div class="container">
+            <h1>Welcome to Boolean Ticket online</h1>
 
-        <div>
-            <label for="user-age">select your age range</label>
-            <select name="" id="user-age">
-                <option value=""></option>
-                <option value="under-age">less than 18</option>
-                <option value="over-age">more then 64</option>
-                <option value="no-scount">between 18 and 64</option>
-            </select>
+            <div class="ms_form-card">
+                <div>
+                    <div class="ms_mb-2">
+                        <label for="user-name">Insert your full name</label>
+                        <input type="text" id="user-name">
+                    </div>
+                    
+                    <div class="ms_mb-2">
+                        <label for="distance-km">What distance do you wanna travel in km?</label>
+                        <input type="text" id="distance-km">
+                    </div>
+            
+                    <div class="ms_mb-2">
+                        <label for="user-age">select your age range</label>
+                        <select name="" id="user-age">
+                            <option value=""></option>
+                            <option value="under-age">less than 18</option>
+                            <option value="over-age">more then 64</option>
+                            <option value="standard">between 18 and 64</option>
+                        </select>
+                    </div>
+                    <button id="submit">Submit</button>
+                </div>
+            </div>
+
+            <h2>your ticket:</h2>
+            <div class="ms_ticket-card">
+                <div class="ms_flexbox ms_align-items-center">
+                    <div class="ms_ticket-left">
+                        <h3>Name:</h3>
+                        <h3 id="passager-name" class="ms_mb-1"></h3>
+                        <h5 id="ticket-distance" class="ms_mb-1">Distance: </h5>
+                    
+                    </div>
+                    <div class="ms_ticket-number">
+                        <h3 class="ms_mb-2">Ticket Number</h3>
+                        <p id="ticket-number"></p>
+                    </div>
+                    <div class="ms_ticket-number">
+                        <h3 class="ms_mb-2">Offer Type:</h3>
+                        <p id="offer-type"></p>
+                    </div>
+                    <div class="ms_ticket-number">
+                        <h3 class="ms_mb-2">Price:</h3>
+                        <h3 id="result"></h3>
+                    </div>
+                </div>
+
+               
+            </div>
         </div>
-        <button id="submit">Submit</button>
-    </div>
-    <h2>Your price ticket is:</h2>
-    <p id="result"></p>
+    </main>
+  
+    
 
     <script src="js/script.js"></script>    
 </body>
