@@ -33,14 +33,17 @@ submitBtn.addEventListener("click",  function () {
         console.log(ticketPrice);
     };
 
+    //final price
     const finalPrice = ticketPrice.toFixed(2)
 
+    //output
     document.getElementById("result").innerHTML = `${finalPrice} euros.`
     document.getElementById("passager-name").innerHTML = userName;
     document.getElementById("ticket-distance").innerHTML += `${userKm} KM`;
     document.getElementById("offer-type").innerHTML = userAge;
     document.getElementById("ticket-number").innerHTML = rndNumber;
 
+    //reset imput
     userNameInput.value = "";
     userAgeInput.value = "";
     userKmInput.value = "";
