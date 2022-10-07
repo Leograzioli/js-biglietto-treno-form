@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bigletti</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div>
+        <div>
+            <label for="user-name">Insert your full name</label>
+            <input type="text" id="user-name">
+        </div>
+        
+        <div>
+            <label for="distance-km">What distance do you wanna travel in km?</label>
+            <input type="text" id="distance-km">
+        </div>
+
+        <div>
+            <label for="user-age">select your age range</label>
+            <select name="" id="user-age">
+                <option value=""></option>
+                <option value="under-age">less than 18</option>
+                <option value="over-age">more then 64</option>
+                <option value="no-scount">between 18 and 64</option>
+            </select>
+        </div>
+        <button id="submit">Submit</button>
+    </div>
+    <h2>Your price ticket is:</h2>
+    <p id="result"></p>
+
+    <script src="js/script.js"></script>    
+</body>
+</html>
