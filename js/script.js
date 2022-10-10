@@ -6,7 +6,7 @@ const submitBtn = document.getElementById("submit");
 const kmPrice = 0.21;
 
 //random numer
-const rndNumber = Math.floor(Math.random() * (10000 - 99999) ) + 99999;
+const rndNumber = Math.floor(Math.random() * (99999 - 10000) ) + 10000;
 
 
 //on click 
